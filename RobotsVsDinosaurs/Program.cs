@@ -11,9 +11,17 @@ namespace RobotsVsDinosaurs
         static void Main(string[] args)
         {
             Weapons weapon = new Weapons();
-            weapon.AddWeaponToList();
-            weapon.AddWeaponToList();
-            weapon.AddWeaponToList();
+            Console.WriteLine($"How many weapons do you want to create: ");
+            int numWeapons = int.Parse(Console.ReadLine());
+            for(int i =0; i < numWeapons; i++)
+            {
+                weapon.AddWeaponToList();
+            }
+
+            
+            //weapon.AddWeaponToList();
+            //weapon.AddWeaponToList();
+            //weapon.AddWeaponToList();
 
            
 

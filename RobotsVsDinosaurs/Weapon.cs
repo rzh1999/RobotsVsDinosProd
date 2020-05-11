@@ -22,6 +22,7 @@ namespace RobotsVsDinosaurs
             this.type = Console.ReadLine();
             Console.WriteLine($"Eneter a weapons attack power 1-100: ");
             this.attackPower = int.Parse(Console.ReadLine());
+
         }
     }
 }
