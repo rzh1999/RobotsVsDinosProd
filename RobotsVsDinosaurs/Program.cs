@@ -15,12 +15,15 @@ namespace RobotsVsDinosaurs
             Robot robot3 = new Robot();
             
             robot1.CreateRobot();
-            robot2.CreateRobot();
-            robot3.CreateRobot();
+            Console.WriteLine(robot1.ToString());
 
-            //Console.WriteLine($"Robots name is {robot1.name} Robots power {robot1.powerLevel} Robots weapon {robot1.weapon.type} and {robot1.weapon.attackPower}");
-            //Console.WriteLine($"Robots name is {robot2.name} Robots power {robot2.powerLevel} Robots weapon {robot2.weapon.type} and {robot2.weapon.attackPower}");
-            //Console.WriteLine($"Robots name is {robot3.name} Robots power {robot3.powerLevel} Robots weapon {robot3.weapon.type} and {robot3.weapon.attackPower}");
+            robot2.CreateRobot();
+            Console.WriteLine(robot2.ToString());
+
+            robot3.CreateRobot();
+            Console.WriteLine(robot3.ToString());
+
+
 
             Dinosaur dinosaur1 = new Dinosaur();
             Dinosaur dinosaur2 = new Dinosaur();
@@ -28,12 +31,14 @@ namespace RobotsVsDinosaurs
 
             dinosaur1.CreateADinosaur();
             Console.WriteLine(dinosaur1.ToString());
-            dinosaur2.CreateADinosaur();
-            dinosaur3.CreateADinosaur();
 
-            //Console.WriteLine($"The dinosaur is a {dinosaur1.type} his health is {dinosaur1.health} his energy is {dinosaur1.energy} and his attack power is {dinosaur1.attackPower}");
-            //Console.WriteLine($"The dinosaur is a {dinosaur2.type} his health is {dinosaur2.health} his energy is {dinosaur2.energy} and his attack power is {dinosaur2.attackPower}");
-            //Console.WriteLine($"The dinosaur is a {dinosaur3.type} his health is {dinosaur3.health} his energy is {dinosaur3.energy} and his attack power is {dinosaur3.attackPower}");
+            dinosaur2.CreateADinosaur();
+            Console.WriteLine(dinosaur2.ToString());
+
+            dinosaur3.CreateADinosaur();
+            Console.WriteLine(dinosaur3.ToString());
+
+
 
             Console.ReadLine();
         }
