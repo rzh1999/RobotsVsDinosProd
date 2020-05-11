@@ -43,6 +43,8 @@ namespace RobotsVsDinosaurs
         {
             int absolutePower = powerLevel + weapon.attackPower;
             dinosaur.health = dinosaur.health - absolutePower;
+            Console.WriteLine($"Dinosaur {dinosaur.type} health is {dinosaur.health}\n");
+            
         }
 
 

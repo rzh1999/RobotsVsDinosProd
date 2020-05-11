@@ -50,7 +50,7 @@ namespace RobotsVsDinosaurs
         {
             int dinosaurPower = attackPower + energy;
             robot.health = robot.health - dinosaurPower;
-
+            Console.WriteLine($"Robot {robot.name} health is {robot.health}\n");
 
         }
     }
