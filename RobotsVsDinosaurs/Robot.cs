@@ -33,5 +33,10 @@ namespace RobotsVsDinosaurs
             //return a random number between 1 and 20
             return random.Next(1, 20);
         }
+
+        public override string ToString()
+        {
+            return $"Robots name is {name} Robots power {powerLevel} Robots weapon {weapon.type} and {weapon.attackPower}";
+        }
     }
 }

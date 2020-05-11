@@ -40,5 +40,10 @@ namespace RobotsVsDinosaurs
             //Retrun a random number between 40 and 100
             return random.Next(40, 100);
         }
+
+        public override string ToString()
+        {
+            return $"The dinosaur is a {type} his health is {health} his energy is {energy} and his attack power is {attackPower}";
+        }
     }
 }
