@@ -39,6 +39,12 @@ namespace RobotsVsDinosaurs
             return $"Robots name is {name} Robots power {powerLevel} Robots weapon {weapon.type} and {weapon.attackPower}";
         }
 
+        public void Attack(Dinosaur dinosaur)
+        {
+            int absolutePower = powerLevel + weapon.attackPower;
+            dinosaur.health = dinosaur.health - absolutePower;
+        }
+
 
     }
 }

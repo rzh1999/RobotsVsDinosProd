@@ -20,15 +20,25 @@ namespace RobotsVsDinosaurs
 
         public void DoBattle()
         {
-            bool isWinner = false;
-            string robotName = "";
-            while (!isWinner)
-            {
-                Console.WriteLine("Enter a robot to fight: ");
-                DisplayRobotNames();
-                robotName = Console.ReadLine();
+            //bool isWinner = false;
+            //string robotName = "";
+            //while (!isWinner)
+            //{
+            //    Console.WriteLine("Enter a robot to fight: ");
+            //    DisplayRobotNames();
+            //    robotName = Console.ReadLine();
 
-            }
+            //}
+           
+
+            Console.WriteLine($"Robots health before attack {fleet.robots[0].health}");
+            herd.dinosaurs[0].Attack(fleet.robots[0]);
+            Console.WriteLine($"Robots health after attack 1 {fleet.robots[0].health}");
+            herd.dinosaurs[0].Attack(fleet.robots[0]);
+            Console.WriteLine($"Robots health after attack 2 {fleet.robots[0].health}");
+            herd.dinosaurs[0].Attack(fleet.robots[0]);
+            Console.WriteLine($"Robots health after attack 3 {fleet.robots[0].health}");
+
         }
 
         public void DisplayRobotNames()

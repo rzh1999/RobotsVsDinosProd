@@ -20,9 +20,6 @@ namespace RobotsVsDinosaurs
             Dinosaur dinosaur = new Dinosaur();
             dinosaur.CreateADinosaur();
             dinosaurs.Add(dinosaur);
-            
-           
-
         }
     }
 

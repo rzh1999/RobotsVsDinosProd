@@ -45,5 +45,13 @@ namespace RobotsVsDinosaurs
         {
             return $"The dinosaur is a {type} his health is {health} his energy is {energy} and his attack power is {attackPower}";
         }
+
+        public void Attack(Robot robot)
+        {
+            int dinosaurPower = attackPower + energy;
+            robot.health = robot.health - dinosaurPower;
+
+
+        }
     }
 }
