@@ -8,5 +8,9 @@ namespace RobotsVsDinosaurs
 {
     class Dinosaur
     {
+        public string type;
+        public double health;
+        public int energy;
+        public int attackPower;
     }
 }

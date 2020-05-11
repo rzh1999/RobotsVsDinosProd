@@ -8,5 +8,7 @@ namespace RobotsVsDinosaurs
 {
     class Weapon
     {
+        string type;
+        int attackPower;
     }
 }

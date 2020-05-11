@@ -8,5 +8,6 @@ namespace RobotsVsDinosaurs
 {
     class Fleet
     {
+        List<Robot> robots;
     }
 }
