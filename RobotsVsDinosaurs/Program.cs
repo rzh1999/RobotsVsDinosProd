@@ -46,7 +46,7 @@ namespace RobotsVsDinosaurs
             //add dinso to herd
             Herd newHerd = new Herd(dinosaurs);
 
-            Console.WriteLine("New herd " + newHerd.dinosaurs[0].type);
+            
             
             //add created robots to a list
             List<Robot> robots = new List<Robot>();
@@ -54,7 +54,7 @@ namespace RobotsVsDinosaurs
             robots.Add(robot2);
             robots.Add(robot3);
             //add robots to the fleet
-           // Fleet newFleet = new Fleet(robots);
+            Fleet newFleet = new Fleet(robots);
             
 
 

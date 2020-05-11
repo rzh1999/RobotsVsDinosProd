@@ -8,6 +8,11 @@ namespace RobotsVsDinosaurs
 {
     class Fleet
     {
-        List<Robot> robots;
+        public List<Robot> robots;
+
+        public Fleet(List<Robot> robots)
+        {
+            this.robots = robots;
+        }
     }
 }
