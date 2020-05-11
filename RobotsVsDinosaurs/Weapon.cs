@@ -8,7 +8,13 @@ namespace RobotsVsDinosaurs
 {
     class Weapon
     {
-        string type;
-        int attackPower;
+       public string type;
+       public  int attackPower;
+
+        public Weapon()
+        {
+            this.type = "Phaser";
+            this.attackPower = 10;
+        }
     }
 }
