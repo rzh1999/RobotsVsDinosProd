@@ -6,16 +6,24 @@ using System.Threading.Tasks;
 
 namespace RobotsVsDinosaurs
 {
-    class Herd
+    public class Herd
     {
        public List<Dinosaur> dinosaurs;
 
-        public Herd(List<Dinosaur> dinosaurs)
+        public Herd()
         {
-            this.dinosaurs = dinosaurs;
+            this.dinosaurs = new List<Dinosaur>();
         }
 
-       
+        public void AddDinoToHerd()
+        {
+            Dinosaur dinosaur = new Dinosaur();
+            dinosaur.CreateADinosaur();
+            dinosaurs.Add(dinosaur);
+            
+           
+
+        }
     }
 
    

@@ -6,17 +6,42 @@ using System.Threading.Tasks;
 
 namespace RobotsVsDinosaurs
 {
-    class Battlefield
+    public class Battlefield
     {
-        Fleet fleet;
-        Herd herd;
+        public Fleet fleet;
+        public Herd herd;
 
-        public Battlefield(Fleet fleet, Herd herd)
+        public Battlefield()
         {
-            this.herd = herd;
-            this.fleet = fleet;
+            
+            this.herd = new Herd();
+            this.fleet = new Fleet();
         }
 
+        public void DoBattle()
+        {
+            bool isWinner = false;
+            string robotName = "";
+            while (!isWinner)
+            {
+                Console.WriteLine("Enter a robot to fight: ");
+                DisplayRobotNames();
+                robotName = Console.ReadLine();
 
+            }
+        }
+
+        public void DisplayRobotNames()
+        {
+            foreach(Robot robot in fleet.robots)
+            {
+                Console.WriteLine($"{robot.name}");
+            }
+            
+        }
+
+        
     }
+
+   
 }

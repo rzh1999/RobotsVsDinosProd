@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RobotsVsDinosaurs
 {
-    class Robot
+    public class Robot
     {
         public string name;
         public double health;
@@ -38,5 +38,7 @@ namespace RobotsVsDinosaurs
         {
             return $"Robots name is {name} Robots power {powerLevel} Robots weapon {weapon.type} and {weapon.attackPower}";
         }
+
+
     }
 }
