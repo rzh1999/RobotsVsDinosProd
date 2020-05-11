@@ -13,8 +13,15 @@ namespace RobotsVsDinosaurs
 
         public Weapon()
         {
-            this.type = "Phaser";
-            this.attackPower = 10;
+           
+        }
+
+        public void CreateAWeapon()
+        {
+            Console.WriteLine($"Enter weapon name: ");
+            this.type = Console.ReadLine();
+            Console.WriteLine($"Eneter a weapons attack power 1-100: ");
+            this.attackPower = int.Parse(Console.ReadLine());
         }
     }
 }
