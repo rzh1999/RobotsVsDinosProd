@@ -8,5 +8,15 @@ namespace RobotsVsDinosaurs
 {
     class Battlefield
     {
+        Fleet fleet;
+        Herd herd;
+
+        public Battlefield(Fleet fleet, Herd herd)
+        {
+            this.herd = herd;
+            this.fleet = fleet;
+        }
+
+
     }
 }
