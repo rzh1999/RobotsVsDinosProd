@@ -13,21 +13,21 @@ namespace RobotsVsDinosaurs
             Battlefield battlefield = new Battlefield();
             //create 3 robots in a fleet           
             battlefield.fleet.AddRobotToFleet();
-            battlefield.fleet.AddRobotToFleet();
-            battlefield.fleet.AddRobotToFleet();
+           // battlefield.fleet.AddRobotToFleet();
+            //battlefield.fleet.AddRobotToFleet();
 
-            Console.WriteLine($"Robot { battlefield.fleet.robots[0].name}");
-            Console.WriteLine($"Robot { battlefield.fleet.robots[1].name}");
-            Console.WriteLine($"Robot { battlefield.fleet.robots[2].name}");
+            //Console.WriteLine($"Robot { battlefield.fleet.robots[0].name}");
+            //Console.WriteLine($"Robot { battlefield.fleet.robots[1].name}");
+            //Console.WriteLine($"Robot { battlefield.fleet.robots[2].name}");
 
            //create 3 dinosaurs
             battlefield.herd.AddDinoToHerd();
-            battlefield.herd.AddDinoToHerd();
-            battlefield.herd.AddDinoToHerd();
+            //battlefield.herd.AddDinoToHerd();
+            //battlefield.herd.AddDinoToHerd();
 
-            Console.WriteLine($"Dinosaur {battlefield.herd.dinosaurs[0].type}");
-            Console.WriteLine($"Dinosaur {battlefield.herd.dinosaurs[1].type}");
-            Console.WriteLine($"Dinosaur {battlefield.herd.dinosaurs[2].type}");
+            //Console.WriteLine($"Dinosaur {battlefield.herd.dinosaurs[0].type}");
+            //Console.WriteLine($"Dinosaur {battlefield.herd.dinosaurs[1].type}");
+            //Console.WriteLine($"Dinosaur {battlefield.herd.dinosaurs[2].type}");
 
 
             
