@@ -19,14 +19,15 @@ namespace RobotsVsDinosaurs
 
         public void CreateRobot()
         {
+            
             Console.WriteLine("Enter a robots name: ");
             this.name = Console.ReadLine();
-            this.powerLevel = GenerateRobotsPower();
+            this.powerLevel = GenerateRobotsPowerLevel();
             // Create a wepaon for this robot
             this.weapon = new Weapon();
         }
 
-        public int GenerateRobotsPower()
+        public int GenerateRobotsPowerLevel()
         {
             Random random = new Random();
             //return a random number between 1 and 20
