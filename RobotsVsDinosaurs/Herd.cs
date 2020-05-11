@@ -8,6 +8,13 @@ namespace RobotsVsDinosaurs
 {
     class Herd
     {
-        List<Dinosaur> dinosaurs;
+       public List<Dinosaur> dinosaurs;
+
+        public Herd(List<Dinosaur> dinosaurs)
+        {
+            this.dinosaurs = dinosaurs;
+        }
     }
+
+   
 }

@@ -38,6 +38,24 @@ namespace RobotsVsDinosaurs
             dinosaur3.CreateADinosaur();
             Console.WriteLine(dinosaur3.ToString());
 
+            //add created dinsaurs to a list
+            List<Dinosaur> dinosaurs = new List<Dinosaur>();
+            dinosaurs.Add(dinosaur1);
+            dinosaurs.Add(dinosaur2);
+            dinosaurs.Add(dinosaur3);
+            //add dinso to herd
+            Herd newHerd = new Herd(dinosaurs);
+
+            Console.WriteLine("New herd " + newHerd.dinosaurs[0].type);
+            
+            //add created robots to a list
+            List<Robot> robots = new List<Robot>();
+            robots.Add(robot1);
+            robots.Add(robot2);
+            robots.Add(robot3);
+            //add robots to the fleet
+           // Fleet newFleet = new Fleet(robots);
+            
 
 
             Console.ReadLine();
