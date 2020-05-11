@@ -50,6 +50,7 @@ namespace RobotsVsDinosaurs
                         {
                             if (herd.dinosaurs.Count != 0)
                             {
+                                Console.WriteLine($"{herd.dinosaurs[dinoToFight]} is dead!");
                                 herd.dinosaurs.RemoveAt(dinoToFight);
                                 if(herd.dinosaurs.Count == 0)
                                 {
@@ -75,6 +76,7 @@ namespace RobotsVsDinosaurs
                         {
                             if (fleet.robots.Count != 0)
                             {
+                                Console.WriteLine($"{fleet.robots[roboToFight2].name} is dead!");
                                 fleet.robots.RemoveAt(roboToFight2);
                                 if(fleet.robots.Count == 0)
                                 {
