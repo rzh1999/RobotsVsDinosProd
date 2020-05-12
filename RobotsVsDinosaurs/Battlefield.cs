@@ -17,6 +17,7 @@ namespace RobotsVsDinosaurs
             this.herd = new Herd();
             this.fleet = new Fleet();
             this.weapons = new Weapons();
+
             Console.WriteLine($"How many weapons do you want to create: ");
             int numWeapons = int.Parse(Console.ReadLine());
             for (int i = 0; i < numWeapons; i++)
@@ -55,6 +56,7 @@ namespace RobotsVsDinosaurs
                         DisplayDinoNames();
                         int dinoToFight = int.Parse(Console.ReadLine());
                         fleet.robots[roboToFight].Attack(herd.dinosaurs[dinoToFight]);
+                       
                         if (herd.dinosaurs[dinoToFight].health <= 0)
                         {
                             if (herd.dinosaurs.Count != 0)

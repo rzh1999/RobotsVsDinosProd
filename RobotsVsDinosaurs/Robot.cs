@@ -23,8 +23,14 @@ namespace RobotsVsDinosaurs
             Console.WriteLine("Enter a robots name: ");
             this.name = Console.ReadLine();
             this.powerLevel = GenerateRobotsPowerLevel();
-            // Create a wepaon for this robot
-            this.weapon = weaponOptions[0];
+            // Display a list of weapons a robot can have
+            Console.WriteLine($"Choose a weapon for your robot: ");
+            for(int i =0; i < weaponOptions.Count; i++)
+            {
+                Console.WriteLine($" {i} {weaponOptions[i].type}");
+            }
+            int weaponChoice = int.Parse(Console.ReadLine());
+            this.weapon = weaponOptions[weaponChoice];
         }
 
         public int GenerateRobotsPowerLevel()
