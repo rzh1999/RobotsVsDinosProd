@@ -18,7 +18,7 @@ namespace RobotsVsDinosaurs
         public void AddWeaponToList()
         {
             Weapon weapon = new Weapon();
-            weapon.CreateAWeapon();
+           
             weapons.Add(weapon);
         
         }

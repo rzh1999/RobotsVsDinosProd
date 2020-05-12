@@ -17,14 +17,14 @@ namespace RobotsVsDinosaurs
             this.health = 100.0;
         }
 
-        public void CreateRobot()
+        public void CreateRobot(List<Weapon> weaponOptions)
         {
             
             Console.WriteLine("Enter a robots name: ");
             this.name = Console.ReadLine();
             this.powerLevel = GenerateRobotsPowerLevel();
             // Create a wepaon for this robot
-            this.weapon = new Weapon();
+            this.weapon = weaponOptions[0];
         }
 
         public int GenerateRobotsPowerLevel()

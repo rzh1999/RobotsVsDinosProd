@@ -16,10 +16,10 @@ namespace RobotsVsDinosaurs
         }
 
         //create fleet (instantiating a robot object and adding to the list)
-        public void AddRobotToFleet()
+        public void AddRobotToFleet(List<Weapon> weaponOptions)
         {
             Robot robot = new Robot();
-            robot.CreateRobot();
+            robot.CreateRobot(weaponOptions);
             robots.Add(robot);
         }
     }

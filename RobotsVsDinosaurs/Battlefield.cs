@@ -10,26 +10,35 @@ namespace RobotsVsDinosaurs
     {
         public Fleet fleet;
         public Herd herd;
-
+        public Weapons weapons;
         public Battlefield()
         {
             
             this.herd = new Herd();
             this.fleet = new Fleet();
+            this.weapons = new Weapons();
+            Console.WriteLine($"How many weapons do you want to create: ");
+            int numWeapons = int.Parse(Console.ReadLine());
+            for (int i = 0; i < numWeapons; i++)
+            {
+                weapons.AddWeaponToList();
+            }
+
+            fleet.AddRobotToFleet(weapons.weapons);
+            fleet.AddRobotToFleet(weapons.weapons);
+            fleet.AddRobotToFleet(weapons.weapons);
+
+            herd.AddDinoToHerd();
+            herd.AddDinoToHerd();
+            herd.AddDinoToHerd();
         }
 
         public void DoBattle()
         {
-            //bool isWinner = false;
-            //string robotName = "";
-            //while (!isWinner)
-            //{
-            //    Console.WriteLine("Enter a robot to fight: ");
-            //    DisplayRobotNames();
-            //    robotName = Console.ReadLine();
 
-            //}
-            //while (fleet.robots.Count > 0 || herd.dinosaurs.Count > 0)
+            RobotsChooseYourWeapon();
+
+
             bool breakLoop = false;
             while (!breakLoop)
             {
@@ -57,11 +66,7 @@ namespace RobotsVsDinosaurs
                                     breakLoop = true;
                                 }
                             }
-                            //else
-                            //{
-                            //    breakLoop = true;
-                            //    break;
-                            //}
+                            
                         }
                         break;
                     case 2:
@@ -84,11 +89,7 @@ namespace RobotsVsDinosaurs
                                     break;
                                 }
                             }
-                            //else
-                            //{
-                            //    breakLoop = true;
-                            //    break;
-                            //}
+                           
                         }
                         break;
                     default:
@@ -130,7 +131,15 @@ namespace RobotsVsDinosaurs
 
         }
 
-    }
+        public void RobotsChooseYourWeapon()
+        {
+
+            foreach(Weapon item in weapons.weapons)
+            {
+                Console.WriteLine($"The weapons in the list are {item.type}");
+            }
+        }
+}
 
    
 }
