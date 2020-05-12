@@ -38,6 +38,7 @@ namespace RobotsVsDinosaurs
         {
             Random random = new Random();
             //Retrun a random number between 40 and 100
+            System.Threading.Thread.Sleep(30);
             return random.Next(40, 100);
         }
 
@@ -51,6 +52,8 @@ namespace RobotsVsDinosaurs
             int dinosaurPower = attackPower + energy;
             robot.health = robot.health - dinosaurPower;
             Console.WriteLine($"Robot {robot.name} health is {robot.health}\n");
+            
+           
 
         }
     }
